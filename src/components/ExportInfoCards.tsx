@@ -1,34 +1,34 @@
 import {
-  Boxes,
-  ClipboardList,
-  Globe2,
-  Truck,
+  Link,
+  PackageCheck,
+  Ship,
+  Globe,
 } from "lucide-react";
 
 const exportCards = [
   {
     title: "Wholesale process",
     description:
-      "Discovery → catalogue → custom samples → production → QC → dispatch. Transparent at every stage.",
-    icon: ClipboardList,
+      "Discovery → catalogue → sampling → PO → production → QC → dispatch. Transparent at every stage.",
+    icon: Link,
   },
   {
     title: "MOQ details",
     description:
-      "Flexible MOQs from 250 units per SKU for standard importers and 1000 pieces for retail buyers.",
-    icon: Boxes,
+      "Flexible MOQs from 250 units per SKU for Holesales importer and 1000 pcs retails buyers.",
+    icon: PackageCheck,
   },
   {
     title: "Logistics capabilities",
     description:
-      "FOB, DDP & door-to-door. Dedicated export documentation and freight partners.",
-    icon: Truck,
+      "FOB, CIF & door-to-door. Dedicated export documentation and freight partners.",
+    icon: Ship,
   },
   {
     title: "Countries served",
     description:
-      "USA, Germany, Netherlands, Sweden and 15+ more established markets.",
-    icon: Globe2,
+      "USA, Germany, Netherland, Sweden and 15+ more markets.",
+    icon: Globe,
   },
 ];
 
@@ -42,8 +42,8 @@ export default function ExportInfoCards() {
               key={title}
               className="soft-card min-h-[172px] rounded-[18px] p-6 sm:p-8"
             >
-              <Icon className="h-5 w-5 text-[color:var(--color-olive)]" />
-              <h2 className="mt-7 text-[1.45rem] font-semibold tracking-[-0.02em] text-[#273221]">
+              <Icon className="h-5 w-5 text-[#4c6a48]" />
+              <h2 className="mt-4 text-xl font-medium tracking-[-0.01em] text-[#273221]">
                 {title}
               </h2>
               <p className="mt-3 max-w-[420px] text-[13px] leading-7 text-[#727b6c]">
@@ -56,3 +56,4 @@ export default function ExportInfoCards() {
     </section>
   );
 }
+

@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { productItems } from "@/data/products";
 
-// First 3 featured collection items
-const collections = productItems.slice(0, 3);
-
 export default function Collections() {
+  const collections = productItems.slice(0, 3);
+
   return (
     <section className="py-20 sm:py-24">
       <div className="page-shell">

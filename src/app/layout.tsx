@@ -20,13 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} font-sans antialiased`}
-      >
+      <body className={`${montserrat.variable} font-sans antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppButton />
       </body>
     </html>
   );

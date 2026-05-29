@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { useState } from "react";
+import { Mail, MapPin, Phone, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 const contactItems = [
   {
@@ -25,14 +22,53 @@ const contactItems = [
   },
 ];
 
+type Status = "idle" | "loading" | "success" | "error";
+
 export default function ContactDetails() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<Status>("idle");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Server error");
+
+      setStatus("success");
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  const inputClass =
+    "w-full rounded-xl border border-[#e2dbd0] bg-[#faf7f2] px-4 py-3 text-[14px] text-[#3a4333] placeholder-[#b0b8a8] outline-none transition focus:border-[#8baa7a] focus:ring-2 focus:ring-[#8baa7a]/20";
+
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="page-shell">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
           {/* Left column — contact info */}
           <div>
-            <h2 className="font-serif text-[2rem] font-light tracking-[-0.02em] text-[#273221] sm:text-[2.6rem]">
+            <h2 className="text-[2rem] font-light tracking-[-0.02em] text-[#273221] sm:text-[2.6rem]">
               Let&apos;s talk.
             </h2>
 
@@ -57,10 +93,11 @@ export default function ContactDetails() {
 
           {/* Right column — contact form */}
           <div>
-            <h2 className="font-serif text-[2rem] font-light tracking-[-0.02em] text-[#273221] sm:text-[2.6rem]">
+            <h2 className="text-[2rem] font-light tracking-[-0.02em] text-[#273221] sm:text-[2.6rem]">
               Send a message.
             </h2>
-            <form className="mt-8 space-y-4" onSubmit={(e) => e.preventDefault()}>
+
+            <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label
@@ -71,9 +108,13 @@ export default function ContactDetails() {
                   </label>
                   <input
                     id="contact-name"
+                    name="name"
                     type="text"
+                    required
+                    value={form.name}
+                    onChange={handleChange}
                     placeholder="Your name"
-                    className="w-full rounded-xl border border-[#e2dbd0] bg-[#faf7f2] px-4 py-3 text-[14px] text-[#3a4333] placeholder-[#b0b8a8] outline-none transition focus:border-[#8baa7a] focus:ring-2 focus:ring-[#8baa7a]/20"
+                    className={inputClass}
                   />
                 </div>
                 <div>
@@ -85,9 +126,13 @@ export default function ContactDetails() {
                   </label>
                   <input
                     id="contact-email"
+                    name="email"
                     type="email"
+                    required
+                    value={form.email}
+                    onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full rounded-xl border border-[#e2dbd0] bg-[#faf7f2] px-4 py-3 text-[14px] text-[#3a4333] placeholder-[#b0b8a8] outline-none transition focus:border-[#8baa7a] focus:ring-2 focus:ring-[#8baa7a]/20"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -101,9 +146,13 @@ export default function ContactDetails() {
                 </label>
                 <input
                   id="contact-subject"
+                  name="subject"
                   type="text"
+                  required
+                  value={form.subject}
+                  onChange={handleChange}
                   placeholder="Wholesale enquiry / Catalogue request"
-                  className="w-full rounded-xl border border-[#e2dbd0] bg-[#faf7f2] px-4 py-3 text-[14px] text-[#3a4333] placeholder-[#b0b8a8] outline-none transition focus:border-[#8baa7a] focus:ring-2 focus:ring-[#8baa7a]/20"
+                  className={inputClass}
                 />
               </div>
 
@@ -116,17 +165,43 @@ export default function ContactDetails() {
                 </label>
                 <textarea
                   id="contact-message"
+                  name="message"
                   rows={5}
+                  required
+                  value={form.message}
+                  onChange={handleChange}
                   placeholder="Tell us about your requirements..."
-                  className="w-full resize-none rounded-xl border border-[#e2dbd0] bg-[#faf7f2] px-4 py-3 text-[14px] text-[#3a4333] placeholder-[#b0b8a8] outline-none transition focus:border-[#8baa7a] focus:ring-2 focus:ring-[#8baa7a]/20"
+                  className={`${inputClass} resize-none`}
                 />
               </div>
 
+              {/* Status feedback */}
+              {status === "success" && (
+                <div className="flex items-center gap-2 rounded-xl bg-green-50 px-4 py-3 text-[13px] font-medium text-green-700">
+                  <CheckCircle className="h-4 w-4 shrink-0" />
+                  Message sent! We&apos;ll get back to you within 24 hours.
+                </div>
+              )}
+              {status === "error" && (
+                <div className="flex items-center gap-2 rounded-xl bg-red-50 px-4 py-3 text-[13px] font-medium text-red-700">
+                  <AlertCircle className="h-4 w-4 shrink-0" />
+                  Something went wrong. Please try again or email us directly.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="button-primary mt-2 w-full sm:w-auto sm:min-w-[160px]"
+                disabled={status === "loading"}
+                className="button-primary mt-2 flex w-full items-center justify-center gap-2 sm:w-auto sm:min-w-[160px] disabled:opacity-70"
               >
-                Send Message
+                {status === "loading" ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Sending…
+                  </>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </form>
           </div>

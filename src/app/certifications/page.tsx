@@ -21,8 +21,7 @@ export default function CertificationsPage() {
               Certifications
             </h1>
             <p className="mt-5 max-w-[470px] text-[15px] leading-8 text-[#717b6a]">
-              Independent verification of our quality, sustainability, and
-              safety practices.
+              Independent verification of our quality, sustainability, and safety practices.
             </p>
           </div>
         </div>

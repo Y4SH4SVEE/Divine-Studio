@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat, Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  style: ["normal", "italic"],
-});
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
-});
 
 export const metadata: Metadata = {
   title: "Divine India Exports — Handcrafted Wooden Home Décor",
@@ -32,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}
+        className={`${montserrat.variable} font-sans antialiased`}
       >
         <Navbar />
         <main>{children}</main>

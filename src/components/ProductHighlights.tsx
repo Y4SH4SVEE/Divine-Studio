@@ -14,7 +14,7 @@ export default function ProductHighlights() {
         <div className="grid items-center gap-10 lg:grid-cols-[0.94fr_1fr]">
           <div className="relative mx-auto aspect-[1.25] w-full max-w-[500px] overflow-hidden rounded-[18px] bg-[#d9d2c4]">
             <Image
-              src="/Artisan at work.png"
+              src="/Craftsmanship.png"
               alt="Artisan finishing a wooden piece"
               fill
               className="object-cover grayscale"

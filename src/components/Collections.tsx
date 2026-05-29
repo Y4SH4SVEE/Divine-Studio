@@ -3,7 +3,7 @@ import Link from "next/link";
 import { productItems } from "@/data/products";
 
 export default function Collections() {
-  const collections = productItems.slice(0, 3);
+  const collectionItems = productItems.slice(0, 9);
 
   return (
     <section className="py-20 sm:py-24">
@@ -24,10 +24,10 @@ export default function Collections() {
           </Link>
         </div>
 
-        <div className="grid gap-x-5 gap-y-10 md:grid-cols-3">
-          {collections.map((item) => (
+        <div className="mt-10 grid gap-x-5 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+          {collectionItems.map((item) => (
             <article key={item.title} className="group">
-              <div className="relative aspect-[0.88] overflow-hidden rounded-[20px] bg-[#ede7db]">
+              <div className="relative aspect-[0.88] overflow-hidden rounded-[18px] bg-[#eee6d8]">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -35,7 +35,7 @@ export default function Collections() {
                   className="object-cover transition duration-700 group-hover:scale-[1.03]"
                 />
               </div>
-              <h3 className="mt-4 text-[1.36rem] font-semibold tracking-[-0.02em] text-[#273221]">
+              <h3 className="mt-4 text-[1.34rem] font-medium tracking-[-0.03em] text-[#273221]">
                 {item.title}
               </h3>
               <p className="mt-1 text-[13px] leading-6 text-[#7f8478]">

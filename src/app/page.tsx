@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Collections from "@/components/Collections";
-import Categories from "@/components/Categories";
 import OurStory from "@/components/OurStory";
 import Capabilities from "@/components/Capabilities";
 import Sustainability from "@/components/Sustainability";
@@ -13,7 +12,6 @@ export default function Home() {
     <div className="min-h-screen">
       <Hero />
       <Collections />
-      <Categories />
       <OurStory />
       <Capabilities />
       <Sustainability />

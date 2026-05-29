@@ -12,8 +12,8 @@ export default function ProductsGrid() {
             </h2>
           </div>
           <p className="max-w-[380px] text-[13px] leading-6 text-[#7b846f]">
-            From functional organizers to statement tables, discover honest
-            craftsmanship.
+            Nine signature collections, refined across thousands of pieces.
+            Filter by category tag below.
           </p>
         </div>
 

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function OurStory() {
   return (
@@ -28,7 +30,9 @@ export default function OurStory() {
               sanded, finished, and inspected — before it ever leaves our
               doors.
             </p>
-            <button className="button-dark mt-8">Read our story</button>
+            <Link href="/about" className="button-dark mt-8 inline-flex gap-2">
+              Read our story
+            </Link>
           </div>
         </div>
       </div>

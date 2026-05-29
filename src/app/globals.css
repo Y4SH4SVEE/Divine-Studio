@@ -68,29 +68,32 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: var(--color-text-main);
+    background:
+      radial-gradient(circle at top left, rgba(255, 245, 229, 0.7), transparent 25%),
+      linear-gradient(180deg, #fffdf8 0%, #fffefa 100%);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: var(--color-text-main);
-  background:
-    radial-gradient(circle at top left, rgba(255, 245, 229, 0.7), transparent 25%),
-    linear-gradient(180deg, #fffdf8 0%, #fffefa 100%);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-}

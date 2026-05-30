@@ -41,7 +41,7 @@ export default function CertificationStandards() {
               <h2 className="mt-8 text-[1.48rem] font-medium tracking-[-0.03em] text-[#273221]">
                 {title}
               </h2>
-              <p className="mx-auto mt-4 max-w-[240px] text-[13px] leading-7 text-[#727b6c]">
+              <p className="mx-auto mt-4 max-w-[240px] text-[12px] leading-7 text-[#727b6c]">
                 {description}
               </p>
             </article>

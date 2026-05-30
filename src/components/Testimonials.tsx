@@ -4,7 +4,7 @@ const featuredTestimonials = testimonialItems.slice(0, 3);
 
 export default function Testimonials() {
   return (
-    <section className="mt-20 bg-[#3f533c] py-16 text-[#edf0e6] sm:mt-24 sm:py-20">
+    <section className="mt-20 bg-[#556C42] py-16 text-[#edf0e6] sm:mt-24 sm:py-20">
       <div className="page-shell">
         <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-[#cfddbc]">
           Trusted Worldwide

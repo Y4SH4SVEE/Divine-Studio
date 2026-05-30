@@ -11,7 +11,10 @@ export default function ProductPageCta() {
           <Link href="/contact" className="button-primary min-w-[158px]">
             Request a Catalogue
           </Link>
-          <Link href="/contact" className="button-dark min-w-[122px] rounded-full px-8">
+          <Link
+            href="/contact"
+            className="button-dark-product min-w-[122px] rounded-full px-8"
+          >
             Contact us
           </Link>
         </div>

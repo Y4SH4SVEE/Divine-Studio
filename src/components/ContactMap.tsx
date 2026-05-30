@@ -4,10 +4,10 @@ export default function ContactMap() {
       <div className="page-shell">
         <div className="max-w-[920px]">
           <p className="eyebrow">Find Us</p>
-          <h2 className="section-heading mt-4 text-[2.2rem] sm:text-[3rem]">
+          <h2 className="section-heading mt-4 text-[2rem] sm:text-[2.5rem]">
             Visit our{" "}
             <span className="text-[color:var(--color-olive)]">
-              studio &amp; showroom
+              studio &amp; workshop
             </span>
           </h2>
           <p className="mt-4 text-[14px] leading-7 text-[#6f7769]">

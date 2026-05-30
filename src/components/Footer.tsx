@@ -18,9 +18,9 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3f533c] pb-5 pt-10 text-[#edf0e6]">
+    <footer className="bg-[#556C42] pb-5 pt-10 text-[#edf0e6]">
       <div className="page-shell">
-        <div className="grid gap-12 rounded-[34px] bg-[#3f533c] px-3 py-6 md:grid-cols-[1.45fr_0.7fr_0.7fr] md:px-4">
+        <div className="grid gap-12 rounded-[34px] bg-[#556C42] px-3 py-6 md:grid-cols-[1.45fr_0.7fr_0.7fr] md:px-4">
           {/* Brand column */}
           <div className="max-w-sm">
             <div className="mb-6 flex h-[74px] w-[74px] items-center justify-center overflow-hidden rounded-2xl bg-white/95">
@@ -41,8 +41,8 @@ export default function Footer() {
               <div className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
-                  A-33/22A Site-IV, Industrial Area Sahibabad, Ghaziabad,
-                  Uttar Pradesh, India 201010
+                  A-33/22A Site-IV, Industrial Area Sahibabad, Ghaziabad, Uttar
+                  Pradesh, India 201010
                 </span>
               </div>
               <div className="flex gap-3">

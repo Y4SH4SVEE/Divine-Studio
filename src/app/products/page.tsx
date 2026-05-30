@@ -20,8 +20,8 @@ export default function ProductsPage() {
               Products
             </h1>
             <p className="mt-5 max-w-[470px] text-[15px] leading-8 text-[#717b6a]">
-              Explore our range of premium handcrafted wooden furniture and
-              home décor — designed in India, made for the world.
+              An editorial selection of handcrafted wooden home décor and
+              lifestyle pieces — designed in India, made for the world.
             </p>
           </div>
         </div>

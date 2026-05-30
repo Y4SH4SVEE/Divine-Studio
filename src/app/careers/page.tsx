@@ -16,7 +16,7 @@ export default function CareersPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000&auto=format&fit=crop')",
+              "url('/CareerHero.png')",
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(34,35,32,0.5)_0%,rgba(34,35,32,0.12)_100%)]" />

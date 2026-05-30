@@ -26,10 +26,10 @@ export default function ExportPage() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-[#bca374]">
               Wholesale &amp; Trade
             </p>
-            <h1 className="mt-4 text-[3.3rem] font-extralight leading-[0.96] tracking-[-0.06em] text-white sm:text-[4.4rem]">
+            <h1 className="mt-4 text-[3.3rem] font-extralight leading-[0.96] tracking-[-0.06em] text-white sm:text-[3.4rem]">
               Export Worldwide
             </h1>
-            <p className="mt-5 max-w-[430px] text-[15px] leading-8 text-white/78">
+            <p className="mt-5 max-w-[430px] text-[13px] leading-8 text-white/78">
               A trusted manufacturing partner for boutiques, distributors, and
               design-led retailers across 15+ countries.
             </p>

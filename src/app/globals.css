@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ef625b;
+  --color-primary: #FF3838;
   --color-primary-hover: #e04d46;
   --color-olive: #4c6a48;
   --color-olive-deep: #293222;
@@ -25,7 +25,7 @@
   }
 
   .page-shell {
-    @apply mx-auto w-full max-w-[1140px] px-5 sm:px-8 lg:px-10;
+    @apply mx-auto w-full max-w-[1000px] px-5 sm:px-8 lg:px-10;
   }
 
   .eyebrow {
@@ -34,7 +34,7 @@
 
   /* Section headings — Montserrat */
   .section-heading {
-    @apply font-sans text-[2.15rem] font-light leading-[1.05] tracking-[-0.02em] text-[#273221] sm:text-[2.8rem] lg:text-[3.2rem];
+    @apply font-sans text-[2.10rem] font-light leading-[1.05] tracking-[-0.02em] text-[#273221] sm:text-[2.8rem] lg:text-[3.2rem];
   }
 
   /* Display headings — Montserrat */
@@ -52,11 +52,15 @@
   }
 
   .soft-card {
-    @apply rounded-[28px] border border-[color:var(--color-border-soft)] bg-white shadow-[0_16px_40px_rgba(46,53,37,0.08)];
+    @apply rounded-[15px] border border-[color:var(--color-border-soft)] shadow-[0_4px_12px_rgba(85,99,77,0.08)] bg-white/80 backdrop-blur-sm;
   }
 
   .button-primary {
     @apply inline-flex items-center justify-center rounded-full bg-[color:var(--color-primary)] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[color:var(--color-primary-hover)];
+  }
+
+  .button-dark-product {
+    @apply inline-flex items-center justify-center rounded-full bg-[#242A1D] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[color:var(--color-olive-deep)];
   }
 
   .button-secondary {
@@ -64,7 +68,7 @@
   }
 
   .button-dark {
-    @apply inline-flex items-center justify-center rounded-lg bg-[color:var(--color-olive-deep)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1f271a];
+    @apply inline-flex items-center justify-center rounded-lg bg-[#242A1D] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1f271a];
   }
 }
 
@@ -80,7 +84,11 @@
   body {
     color: var(--color-text-main);
     background:
-      radial-gradient(circle at top left, rgba(255, 245, 229, 0.7), transparent 25%),
+      radial-gradient(
+        circle at top left,
+        rgba(255, 245, 229, 0.7),
+        transparent 25%
+      ),
       linear-gradient(180deg, #fffdf8 0%, #fffefa 100%);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -96,4 +104,3 @@
     display: block;
   }
 }
-

@@ -12,7 +12,7 @@ export default function TestimonialGrid() {
               className="soft-card min-h-[248px] rounded-[18px] p-6"
             >
               <Quote className="h-5 w-5 text-[#d8c6a1]" />
-              <p className="mt-6 min-h-[108px] text-[1.08rem] leading-8 text-[#60695c]">
+              <p className="mt-6 min-h-[108px] text-[15px] leading-6 text-[#60695c]">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
               <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#3a4333]">

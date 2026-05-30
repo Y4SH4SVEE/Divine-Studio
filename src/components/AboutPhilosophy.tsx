@@ -33,11 +33,11 @@ export default function AboutPhilosophy() {
         <div className="max-w-[700px]">
           <p className="eyebrow">Philosophy</p>
           <h2
-            className="mt-4 text-[2.4rem] font-light leading-[1.1] tracking-[-0.01em] text-[#1e2619] sm:text-[3rem]"
+            className="mt-4 text-[2.4rem] font-light leading-[1.1] tracking-[-0.01em] text-[#1e2619] sm:text-[2.7rem]"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             Craft &amp; Design, in{" "}
-            <span className="italic text-[color:var(--color-olive)]">considered balance</span>
+            <span className=" text-[color:var(--color-olive)]">considered balance</span>
           </h2>
           <p className="body-copy mt-6 max-w-[620px]">
             A belief that material, maker and method must speak in one voice

@@ -17,9 +17,7 @@ export default function Sustainability() {
 
           <div className="rounded-[30px] bg-[color:var(--color-sand)] px-8 py-12 sm:px-12 lg:px-16 lg:py-16">
             <h2 className="section-heading max-w-[420px]">
-              Renowned,{" "}
-              <em className="font-serif italic">Responsible</em>{" "}
-              and Sustainable.
+              Renowned, Responsible <br/>and Sustainable.
             </h2>
             <p className="body-copy mt-6 max-w-[460px]">
               Our reputation for quality and craftsmanship has earned
@@ -28,17 +26,6 @@ export default function Sustainability() {
               control over quality and reliability, while our practices reduce
               environmental impact without compromising performance.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/about" className="button-dark">
-                Our history
-              </Link>
-              <Link
-                href="/certifications"
-                className="inline-flex items-center justify-center rounded-lg border border-[#c8bba4] bg-white px-6 py-3 text-sm font-semibold text-[#263121] transition hover:bg-[#f0e9da]"
-              >
-                Sustainability &amp; CSR
-              </Link>
-            </div>
           </div>
         </div>
       </div>

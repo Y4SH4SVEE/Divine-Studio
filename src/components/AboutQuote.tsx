@@ -1,12 +1,12 @@
 export default function AboutQuote() {
   return (
-    <section className="bg-[#3f533c] py-20 text-center sm:py-24">
+    <section className="bg-[#556C42] py-20 text-center sm:py-24">
       <div className="page-shell">
         <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-[#d7e3c9]">
           Founder&apos;s Vision
         </p>
         <blockquote
-          className="mx-auto mt-5 max-w-[760px] text-[2.2rem] font-light leading-[1.22] tracking-[-0.01em] text-white sm:text-[3rem]"
+          className="mx-auto mt-5 max-w-[760px] text-[2.2rem] font-light leading-[1.22] tracking-[-0.01em] text-white sm:text-[2.6rem]"
           style={{ fontFamily: "var(--font-display)" }}
         >
           &ldquo;A home is a quiet biography of the people who live in it. We

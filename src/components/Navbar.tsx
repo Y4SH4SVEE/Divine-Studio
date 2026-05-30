@@ -25,7 +25,7 @@ export default function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur-md">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-[#FCFAF8]">
       <div className="page-shell">
         <div className="grid h-[72px] grid-cols-[92px_1fr_auto] items-center gap-4 lg:grid-cols-[100px_1fr_200px]">
           {/* Logo */}
@@ -86,7 +86,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="border-t border-black/5 bg-white px-5 py-4 lg:hidden">
+        <div className="border-t border-black/5 bg-[#FCFAF8] px-5 py-4 lg:hidden">
           {navItems.map((item) => (
             <Link
               key={item.label}

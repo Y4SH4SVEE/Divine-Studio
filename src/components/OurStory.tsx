@@ -9,7 +9,7 @@ export default function OurStory() {
         <div className="grid items-center gap-10 lg:grid-cols-[0.92fr_1fr] lg:gap-14">
           <div className="relative mx-auto aspect-[0.78] w-full max-w-[430px] overflow-hidden rounded-[24px] bg-[#d5d0c6]">
             <Image
-              src="/Artisan at work.png"
+              src="/Artisan crafting wood.png"
               alt="Artisan crafting wooden furniture"
               fill
               className="object-cover grayscale"
@@ -27,8 +27,7 @@ export default function OurStory() {
               From the workshops of Sahibabad, our master artisans shape
               responsibly sourced timber into pieces that bring warmth and
               intention to modern interiors. Every object is touched by hand —
-              sanded, finished, and inspected — before it ever leaves our
-              doors.
+              sanded, finished, and inspected — before it ever leaves our doors.
             </p>
             <Link href="/about" className="button-dark mt-8 inline-flex gap-2">
               Read our story

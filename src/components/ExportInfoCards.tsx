@@ -40,7 +40,7 @@ export default function ExportInfoCards() {
           {exportCards.map(({ title, description, icon: Icon }) => (
             <article
               key={title}
-              className="soft-card min-h-[172px] rounded-[18px] p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_rgba(46,53,37,0.12)]"
+              className="soft-card min-h-[172px] rounded-[18px] p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1"
             >
               <Icon className="h-5 w-5 text-[#4c6a48]" />
               <h2 className="mt-4 text-xl font-medium tracking-[-0.01em] text-[#273221]">

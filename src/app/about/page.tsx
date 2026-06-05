@@ -14,29 +14,59 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden pt-[72px]">
-        {/* Background image at natural resolution — no crop/stretch */}
+    <div className="min-h-screen bg-[#FCFAF8]">
+      <section
+        className="relative overflow-hidden bg-[#F4F1EC]"
+        style={{ height: 365, marginTop: 72 }}
+      >
         <Image
-          src="/Gradient-2.png"
+          src="/Gradient.png"
           alt=""
           fill
-          className="object-contain object-right"
+          className="object-cover object-center"
           priority
+          sizes="100vw"
         />
-        {/* Light cream overlay fading left → transparent right */}
-        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(252,247,238,0.96)_0%,rgba(252,247,238,0.82)_38%,rgba(252,247,238,0.45)_62%,rgba(252,247,238,0.08)_100%)]" />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(90deg, rgba(252, 250, 248, 0.30) 0%, rgba(252, 250, 248, 0.18) 38%, rgba(252, 250, 248, 0.08) 100%)",
+          }}
+        />
 
-        <div className="page-shell relative z-10 py-20 sm:py-28">
-          <div className="max-w-[640px] py-8 sm:py-12">
-            <p className="eyebrow">Our House</p>
+        <div
+          className="relative z-10 mx-auto w-full px-5 sm:px-8 lg:px-0"
+          style={{ maxWidth: 836, height: "100%", paddingTop: 91 }}
+        >
+          <div>
+            <p
+              className="font-semibold uppercase text-[#293222]"
+              style={{ fontSize: 8, letterSpacing: "0.42em" }}
+            >
+              Our House
+            </p>
             <h1
-              className="display-heading mt-4 text-[#1e2619]"
+              className="font-light leading-none text-[#1f271a]"
+              style={{
+                marginTop: 15,
+                fontSize: "clamp(34px, 3.74vw, 49px)",
+                letterSpacing: "-0.025em",
+              }}
             >
               About Divine India Exports
             </h1>
-            <p className="mt-5 max-w-[420px] text-[15px] leading-[1.8] text-[#5f6759]">
+            <p
+              className="font-medium leading-none text-[#20261d]"
+              style={{ marginTop: 17, fontSize: 12 }}
+            >
               A family-run export house with a quiet obsession for
               craftsmanship.
             </p>

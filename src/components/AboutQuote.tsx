@@ -18,7 +18,7 @@ export default function AboutQuote() {
           <span className="h-px w-12 bg-white/40" />
           <div>
             <p className="text-[18px]">Prachi Garg</p>
-            <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#d7e3c9]">
+            <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#d7e3c9]">
               Founder, Divine India Exports
             </p>
           </div>

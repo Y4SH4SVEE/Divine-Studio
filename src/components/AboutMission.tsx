@@ -19,8 +19,8 @@ export default function AboutMission() {
                 Vision
               </p>
               <h2 className="mt-3 text-[17px] font-light leading-[1.35] text-[#3d4238]">
-                A future where heritage skills and modern design coexist,
-                making timeless objects accessible everywhere.
+                A future where heritage skills and modern design coexist, making
+                timeless objects accessible everywhere.
               </h2>
             </div>
           </div>
@@ -47,17 +47,17 @@ export default function AboutMission() {
             <div className="max-w-[430px] space-y-4 text-[10px] leading-[1.78] text-[#6a7168]">
               <p>
                 Divine India Exports began in the lanes of UP India &mdash; a
-                town where the scent of seasoned sheesham has perfumed family
-                workshops for generations. What started as a single bench and a
-                handful of chisels has matured into an export house trusted by
-                interior studios, hospitality groups, and lifestyle retailers
-                worldwide.
+                state where the scent of seasoned mango & acacia wood has
+                perfumed family workshops for generations. What started as a
+                single bench and a handful of chisels has matured into an export
+                house trusted by interior studios, hospitality groups, and
+                lifestyle retailers worldwide.
               </p>
               <p>
-                We marry inherited woodworking craft with the discipline of
-                contemporary design &mdash; sketching in our studio,
-                prototyping with master artisans, and finishing each piece with
-                a quiet attention that machines alone cannot replicate.
+                We do inherited woodworking craft with the discipline of
+                contemporary design &mdash; sketching in our studio, prototyping
+                with master artisans, and finishing each piece with a quiet
+                attention that machines alone cannot replicate.
               </p>
             </div>
           </div>

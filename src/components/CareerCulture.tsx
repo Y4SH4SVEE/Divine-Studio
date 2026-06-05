@@ -34,35 +34,67 @@ const cultureItems = [
 
 export default function CareerCulture() {
   return (
-    <section className="bg-[#F0F1E8] py-[68px] sm:py-[78px]">
-      <div className="mx-auto w-full max-w-[728px] px-5 sm:px-8 lg:px-0">
-        <div className="mx-auto max-w-[470px] text-center">
-          <p className="text-[8px] font-semibold uppercase leading-none tracking-[0.42em] text-[#9baa85]">
+    <section
+      className="bg-[#F0F1E8]"
+      style={{ paddingBottom: 78, paddingTop: 84 }}
+    >
+      <div
+        className="mx-auto w-full px-5 sm:px-8 lg:px-0"
+        style={{ maxWidth: 972 }}
+      >
+        <div className="mx-auto text-center" style={{ maxWidth: 590 }}>
+          <p
+            className="font-semibold uppercase leading-none text-[#9baa85]"
+            style={{ fontSize: 8, letterSpacing: "0.42em" }}
+          >
             Culture
           </p>
-          <h2 className="mt-3 text-[25px] font-light leading-[1.12] text-[#30382d] sm:text-[28px]">
+          <h2
+            className="font-light leading-none text-[#30382d]"
+            style={{
+              fontSize: "clamp(30px, 2.38vw, 36px)",
+              letterSpacing: "-0.025em",
+              marginTop: 17,
+            }}
+          >
             Why work at{" "}
             <span className="text-[#556C42]">Divine India</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-[410px] text-[10px] leading-[1.75] text-[#697366] sm:text-[11px]">
+          <p
+            className="mx-auto leading-[1.55] text-[#697366]"
+            style={{ fontSize: 13, marginTop: 24, maxWidth: 505 }}
+          >
             A studio built on craft, care and conversation &mdash; where what
             we make and how we make it carry equal weight.
           </p>
         </div>
 
-        <div className="mt-[45px] grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          className="grid sm:grid-cols-2 lg:grid-cols-4"
+          style={{ gap: 20, marginTop: 54 }}
+        >
           {cultureItems.map(({ title, description, icon: Icon }) => (
             <article
               key={title}
-              className="rounded-[8px] bg-white px-[18px] py-[18px] shadow-[0_8px_20px_rgba(50,60,45,0.06)]"
+              className="rounded-[8px] bg-white shadow-[0_8px_20px_rgba(50,60,45,0.06)]"
+              style={{ minHeight: 211, padding: "25px 26px" }}
             >
-              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#eef2eb]">
-                <Icon className="h-3.5 w-3.5 text-[#556C42]" />
+              <div
+                className="flex items-center justify-center rounded-full bg-[#eef2eb]"
+                style={{ height: 38, width: 38 }}
+              >
+                <Icon className="h-4 w-4 text-[#556C42]" />
               </div>
-              <h3 className="mt-[18px] text-[12px] font-light leading-none text-[#434b40]">
+              <h3
+                className="font-light leading-none text-[#434b40]"
+                style={{ fontSize: 16, marginTop: 25 }}
+              >
                 {title}
               </h3>
-              <p className="mt-[11px] text-[8px] leading-[1.65] text-[#626b60]">
+              <p
+                className="leading-[1.65] text-[#626b60]"
+                style={{ fontSize: 10, marginTop: 15 }}
+              >
                 {description}
               </p>
             </article>

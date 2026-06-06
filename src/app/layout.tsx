@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Divine India Exports — Handcrafted Wooden Home Décor",
+  title: "Divine India Exports | Trusted Indian Handicrafts Export Company",
   description:
-    "Premium handcrafted wooden home décor & lifestyle collections, exported worldwide from India. Explore our curated collections.",
+    "Discover premium wooden handicrafts, home decor, kitchenware, and handcrafted products from India. Trusted global exporter with quality craftsmanship.",
 };
 
 export default function RootLayout({

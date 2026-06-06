@@ -30,7 +30,7 @@ export default function CareerOpenings() {
         className="mx-auto w-full px-5 sm:px-8 lg:px-0"
         style={{ maxWidth: 968 }}
       >
-        <div className="w-full" style={{ maxWidth: 604 }}>
+        <div className="mx-auto w-full" style={{ maxWidth: 636 }}>
           <h2
             className="font-medium leading-none text-[#242b22]"
             style={{ fontSize: 25 }}
@@ -45,8 +45,8 @@ export default function CareerOpenings() {
                 className="flex items-center justify-between gap-6 rounded-[9px] border border-[#e8e2d9] bg-white"
                 style={{
                   marginTop: opening.title === openings[0].title ? 0 : 14,
-                  minHeight: 92,
-                  padding: "21px 22px",
+                  minHeight: 98,
+                  padding: "23px 24px",
                 }}
               >
                 <div>

@@ -40,7 +40,7 @@ export default function CareerCulture() {
     >
       <div
         className="mx-auto w-full px-5 sm:px-8 lg:px-0"
-        style={{ maxWidth: 972 }}
+        style={{ maxWidth: 1068 }}
       >
         <div className="mx-auto text-center" style={{ maxWidth: 590 }}>
           <p
@@ -71,29 +71,29 @@ export default function CareerCulture() {
 
         <div
           className="grid sm:grid-cols-2 lg:grid-cols-4"
-          style={{ gap: 20, marginTop: 54 }}
+          style={{ gap: 24, marginTop: 58 }}
         >
           {cultureItems.map(({ title, description, icon: Icon }) => (
             <article
               key={title}
               className="rounded-[8px] bg-white shadow-[0_8px_20px_rgba(50,60,45,0.06)]"
-              style={{ minHeight: 211, padding: "25px 26px" }}
+              style={{ minHeight: 232, padding: "28px 30px" }}
             >
               <div
                 className="flex items-center justify-center rounded-full bg-[#eef2eb]"
-                style={{ height: 38, width: 38 }}
+                style={{ height: 42, width: 42 }}
               >
-                <Icon className="h-4 w-4 text-[#556C42]" />
+                <Icon className="h-[18px] w-[18px] text-[#556C42]" />
               </div>
               <h3
                 className="font-light leading-none text-[#434b40]"
-                style={{ fontSize: 16, marginTop: 25 }}
+                style={{ fontSize: 17, marginTop: 27 }}
               >
                 {title}
               </h3>
               <p
                 className="leading-[1.65] text-[#626b60]"
-                style={{ fontSize: 10, marginTop: 15 }}
+                style={{ fontSize: 11, marginTop: 16 }}
               >
                 {description}
               </p>

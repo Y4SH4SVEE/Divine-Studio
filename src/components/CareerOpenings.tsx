@@ -24,13 +24,13 @@ export default function CareerOpenings() {
   return (
     <section
       className="bg-[#FCFAF8]"
-      style={{ minHeight: 720, paddingTop: 84 }}
+      style={{ minHeight: 760, paddingTop: 84 }}
     >
       <div
         className="mx-auto w-full px-5 sm:px-8 lg:px-0"
         style={{ maxWidth: 968 }}
       >
-        <div className="w-full" style={{ maxWidth: 564 }}>
+        <div className="w-full" style={{ maxWidth: 604 }}>
           <h2
             className="font-medium leading-none text-[#242b22]"
             style={{ fontSize: 25 }}
@@ -38,27 +38,27 @@ export default function CareerOpenings() {
             Open positions
           </h2>
 
-          <div style={{ marginTop: 28 }}>
+          <div style={{ marginTop: 30 }}>
             {openings.map((opening) => (
               <article
                 key={opening.title}
                 className="flex items-center justify-between gap-6 rounded-[9px] border border-[#e8e2d9] bg-white"
                 style={{
-                  marginTop: opening.title === openings[0].title ? 0 : 13,
-                  minHeight: 80,
-                  padding: "18px 20px",
+                  marginTop: opening.title === openings[0].title ? 0 : 14,
+                  minHeight: 92,
+                  padding: "21px 22px",
                 }}
               >
                 <div>
                   <h3
                     className="font-light leading-none text-[#333b31]"
-                    style={{ fontSize: 15 }}
+                    style={{ fontSize: 16 }}
                   >
                     {opening.title}
                   </h3>
                   <p
                     className="leading-none text-[#697166]"
-                    style={{ fontSize: 10, marginTop: 10 }}
+                    style={{ fontSize: 10, marginTop: 11 }}
                   >
                     {opening.details}
                   </p>

@@ -52,13 +52,13 @@ export default function CareerOpenings() {
                 <div>
                   <h3
                     className="font-light leading-none text-[#333b31]"
-                    style={{ fontSize: 16 }}
+                    style={{ fontSize: 17 }}
                   >
                     {opening.title}
                   </h3>
                   <p
                     className="leading-none text-[#697166]"
-                    style={{ fontSize: 10, marginTop: 11 }}
+                    style={{ fontSize: 11, marginTop: 11 }}
                   >
                     {opening.details}
                   </p>
@@ -67,7 +67,7 @@ export default function CareerOpenings() {
                 <Link
                   href="/contact"
                   className="inline-flex shrink-0 items-center gap-1 font-semibold uppercase leading-none text-[#61744f] transition hover:text-[#35452c]"
-                  style={{ fontSize: 7, letterSpacing: "0.36em" }}
+                  style={{ fontSize: 8, letterSpacing: "0.36em" }}
                 >
                   Apply
                   <ArrowRight className="h-2 w-2" strokeWidth={1.8} />

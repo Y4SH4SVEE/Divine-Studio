@@ -87,13 +87,13 @@ export default function CareerCulture() {
               </div>
               <h3
                 className="font-light leading-none text-[#434b40]"
-                style={{ fontSize: 17, marginTop: 27 }}
+                style={{ fontSize: 18, marginTop: 27 }}
               >
                 {title}
               </h3>
               <p
                 className="leading-[1.65] text-[#626b60]"
-                style={{ fontSize: 11, marginTop: 16 }}
+                style={{ fontSize: 12, marginTop: 16 }}
               >
                 {description}
               </p>

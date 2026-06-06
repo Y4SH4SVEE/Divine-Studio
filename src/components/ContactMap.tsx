@@ -11,7 +11,7 @@ export default function ContactMap() {
             </span>
           </h2>
           <p className="mt-4 text-[14px] leading-7 text-[#6f7769]">
-            Sahibabad, Uttar Pradesh — the heart of our craft. Walk-ins by
+            Ghaziabad, Uttar Pradesh — the home of our craft. Walk-ins by
             appointment.
           </p>
 

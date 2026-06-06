@@ -1,7 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, Phone, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
+} from "lucide-react";
 
 const contactItems = [
   {
@@ -12,7 +19,7 @@ const contactItems = [
   },
   {
     label: "Phone",
-    value: "+91 8527174349",
+    value: "+91 8527174307",
     icon: Phone,
   },
   {
@@ -34,7 +41,7 @@ export default function ContactDetails() {
   const [status, setStatus] = useState<Status>("idle");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
